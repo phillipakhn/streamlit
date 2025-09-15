@@ -20,7 +20,7 @@ st.markdown("""
 # =========================
 # CONFIG (fixed constants)
 # =========================
-MODEL_DIR = "../Scripts/elo_savedmodel_barcodes2"  # folder with saved_model.pb + variables/
+MODEL_DIR = "./Scripts/elo_savedmodel_barcodes2"  # folder with saved_model.pb + variables/
 
 # From your training split:
 Y_MEAN = 2163.5744788425636
@@ -186,3 +186,4 @@ if st.button("Predict ELO", type="primary"):
 
     except Exception as e:
         st.error(f"{type(e).__name__}: {e}")
+
